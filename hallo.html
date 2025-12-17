@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>MyGallery</h1>
+                </div>
+                
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-header">
+            <h2>Menu</h2>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="menu-section">
+            <h3>Navigation</h3>
+            <ul class="menu-options">
+                <li>
+                    <a href="#" id="homepageLink">
+                        <i class="fas fa-home"></i> Homepage
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/shofiqul8008" target="_blank" id="contactLink">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="menu-section">
+            <h3>Theme</h3>
+            <ul class="menu-options">
+                <li>
+                    <button id="darkModeBtn">
+                        <i class="fas fa-moon"></i> Dark Mode
+                    </button>
+                </li>
+                <li>
+                    <button id="lightModeBtn">
+                        <i class="fas fa-sun"></i> Light Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="menu-section">
+            <h3>GitHub Source</h3>
+            <div class="github-config">
+                <div class="config-item">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
+    <main>
+        <div class="container">
+            <div class="loading-indicator" id="loadingIndicator">
+                <i class="fas fa-spinner fa-spin"></i> Loading images from GitHub...
+            </div>
+            
+            <div class="gallery" id="gallery"></div>
+            
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <i class="fas fa-plus"></i> Load More Images
+                </button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>My Gallery &copy; <span id="currentYear"></span>| <a href="mailto:shofiqul8008@outlook.com?subject=Hallo&body=Hallo%20there">Email me</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>
