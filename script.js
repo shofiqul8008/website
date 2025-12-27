@@ -2,7 +2,7 @@
         // Configuration - Your GitHub details
         const GITHUB_USERNAME = 'shofiqul8008';
         const GITHUB_REPO = 'MyGallery';
-        const IMAGES_FOLDER = 'picture';
+        const IMAGES_FOLDER = 'friend;
         const IMAGES_PER_PAGE = 20; // Increased for better Pinterest-style loading
         
         // State variables
